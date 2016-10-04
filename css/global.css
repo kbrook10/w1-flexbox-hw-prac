@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    border: 1px dashed grey;
+}
+/*This section deals with generic styling of the body*/
+html, body{
+    width: 100%;
+}
+
+body{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #F7F7F7;
+}
+main{
+    /*This allows the main section to stay under the fixed navigation bar*/
+    padding-top: 75px;
+    color: #474747;
+}
+section{
+    padding-top: 50px;
+}
+footer{
+    padding-top: 50px;
+    color: #474747;
+}
+/*This section deals with styling of the header*/
+.row{
+    /*This helps to convert the images and text from columns to rows*/
+    display: flex;
+    /*This helps to take up only 70% of header*/
+    width: 960px;
+    /*This helps to align the lists and images vertically in the navigation*/
+    align-items: center;
+    /*This helps to center the navigation in the header region*/
+    margin: 0 auto;
+    border-top: 2px solid red;
+}
+.row:first-child{
+    /*This gives the designco a ratio of 3/12 of navigation*/
+    flex: 3;
+}
+ul{
+    /*This gives the list a ratio of 8/12 of the navigation*/
+    flex: 8;
+    /*This slides the lists to the left*/
+    text-align: left;
+}
+ul li{
+    /*This converts the list from a column to a row*/
+    display: inline-block;
+    /*This adds 10px of space between the lists items*/
+    padding: 0 5px;
+}
+li:first-child{
+    color: red;
+}
+.row:last-child{
+    /*This gives the search icon a ratio of 1/12 of the navigation space*/
+    flex: 1;
+}
+.hr-row-icon{
+    /*This changes the height of the navigation icons*/
+    height: 15px;
+}
+/*This section adds styling to the main body*/
+
+main > p{
+    margin: 5px auto;
+}
+/*This is the section for the gallery area*/
+.mn-sec-gal{
+    /*This centers the gallery with the navigation bar regarding space of viewport*/
+    width: 960px;
+    /*This centers the gallery on the screen*/
+    margin: 0 auto;
+    /*This prepares to rotate and orient the first two columns (e.g. sec1 and sec2)*/
+    display: flex;
+}
+/*This section handles the orientation of section 1 of the gallery*/
+.mn-sec-gal-sec1{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.mn-sec-gal-sec2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.mn-sec-gal > img{
+    width: 100%;
+}
+/*This section handles the internal orientation of section 1 of the gallery*/
+.mn-sec-gal-sec1-top{
+    flex: 2;
+}
+.mn-sec-gal-sec1-btm{
+    flex: 1;
+    display: flex;
+}
+.mn-sec-gal-sec1-btm-1{
+    flex: 1;
+}
+.mn-sec-gal-sec1-btm-r{
+    flex: 2;
+}
+
+/*This section handles the orientation of section 2 of the gallery*/
+.mn-sec-gal-sec2-top{
+    flex: 1;
+}
+.mn-sec-gal-sec2-btm{
+    flex: 2;
+}
+/*This handles the footer section */
+footer{
+    margin: 30px auto;
+    width: 940px;
+    text-align: left;
+}
+.col{
+    padding: 15px;
+}
+/*This section handles the styling of the column left area*/
+.col-left{
+    float: left;
+    width: 30%;
+}
+.col-left > h4{
+    color: red;
+}
+/*This section handles the styling of the column right area*/
+.col-right{
+    width: 60%;
+    float: right;
+}
+.col-right > p{
+    columns: 3;
+}
